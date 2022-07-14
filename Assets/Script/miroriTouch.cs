@@ -26,7 +26,7 @@ public class miroriTouch : MonoBehaviour
     {
         thisPos = this.transform.position;
         //Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        Instantiate(midori, new Vector3(0,0,0) , Quaternion.identity);
+        Instantiate(midori, new Vector3(0,-2,0) , Quaternion.identity);
 
     }
 

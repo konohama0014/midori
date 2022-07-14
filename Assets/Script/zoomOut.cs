@@ -26,6 +26,9 @@ public class zoomOut : MonoBehaviour
         mainCamObj.transform.position = new Vector3(0, 0, -100);
     }
 
-
+    public void touchZoomIn()
+    {
+        mainCamObj.transform.position = new Vector3(0, 0, -10);
+    }
 
 }
