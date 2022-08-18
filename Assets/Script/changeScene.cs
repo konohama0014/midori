@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+using DG.Tweening;
 
 public class changeScene : MonoBehaviour
 {
@@ -19,12 +21,18 @@ public class changeScene : MonoBehaviour
 
     public void Changemainsene()
     {
-        SceneManager.LoadScene("mainsene");
+        transform.DOScale(1.1f, 0.5f).SetEase(Ease.OutElastic).OnComplete(() =>
+        {
+            SceneManager.LoadScene("mainsene");
+        });
     }
 
     public void Changeintro()
     {
-        SceneManager.LoadScene("intro");
+        transform.DOScale(1.1f, 0.5f).SetEase(Ease.OutElastic).OnComplete(() =>
+        {
+            SceneManager.LoadScene("intro");
+        });
     }
 
 }
